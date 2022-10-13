@@ -1,5 +1,7 @@
 # coursera-test
 Coursera test repository
-theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+git checkout --orphan gh-pages
+git --work-tree build add --all
+git --work-tree build commit -m 'gh-pages'
+git push origin HEAD:gh-pages --force
+git checkout -f master
